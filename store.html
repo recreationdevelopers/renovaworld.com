@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Store - Re-Nova World</title>
+		
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova Store, buy songs, VSTs and more" />
+		<meta name="keywords" content="store, music, songs, instrumentals, VST, VSTi" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+
+	</head>
+
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Store</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://blog.renovaworld.com">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Buy to support</a></h2>
+							<p>
+								Our store currently has tracks for download. We are working on new VST Plugins that will be available soon.
+							</p>
+						</header>
+						<a href="#" class="image featured"><img src="http://renovaworld.com/images/store11.jpg" alt="" /></a>
+						<section>
+							<header>
+								<h3>Contribute & Be A Part</h3>
+							</header>
+							<p>
+								We at Re-Nova keep looking for inspiration from around the world. New artists, designers, developers and idea makers fascinate us the most. We like to collaborate with people on various kind of projects including short films and workshops. If you think our work is good enough, support us by buying our tracks. You can use the tracks in your projects for non-commercial basis, provided you mention our name.
+							</p>
+							<p>
+								We have been trying our hands on a wider field like developing Virtual Instruments & Effects, and creating a soundbank. It's always great to meet like minded people. So if you are into any kind of art or production, feel free to contact us. Be a part of our team and we'll create some cool stuff for the world. Contact us at <a href="mailto:renovaofficial@gmail.com">renovaofficial@gmail.com</a>.
+							</p>
+						</section>
+					</article>
+					<hr />
+					<div class="row">
+						<!-- MASK BANDCAMP -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a> -->
+							<center>
+							<iframe style="border: 0; width: 320px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/track=229729054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://re-nova.bandcamp.com/track/re-nova-mask">Re-Nova - Mask by Re-Nova</a></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Mask</a></h3>
+							</header>
+							<p>
+								<center><strong>Genre</strong>: Rap instrumental</center>
+								<br>
+								Soothing intro with cool beats that lead into an adventure of orchestral strings in the chorus. This is an easy-to-rap instrumental that we composed a while ago. Download, add your vocals and send to us. It'll be a fun collaboration.
+							</p>
+						</article>
+
+						<!-- BLAZED BANDCAMP -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+							<center>
+							<iframe style="border: 0; width: 320px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/track=1353746547/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://re-nova.bandcamp.com/track/re-nova-blazed">Re-Nova - Blazed by Re-Nova</a></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Blazed</a></h3>
+							</header>
+							<p>
+								<center><strong>Genre</strong>: Epic Soundtrack</center>
+								<br>
+								A soundtrack for thriller movie scenes that includes heavy drum hits followed by powerful action strings. This track in suitable is suitable for short films and promos as well.
+							</p>
+						</article>
+
+						<!-- OFF THE EDGE CINEMATIC BANDCAMP -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a> -->
+							<center>
+							<iframe style="border: 0; width: 320px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/track=2160389590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://re-nova.bandcamp.com/track/off-the-edge-cinematic-version">Off The Edge (cinematic version) by Re-Nova</a></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Off The Edge (Cinematic Version)</a></h3>
+							</header>
+							<p>
+								<center><strong>Genre</strong>: Rock</center>
+								<br>
+								Begins with a white noise riser that leads you into a battle of drums and strings. This is the special cinematic version of the track that Linkin Park's Mike Shinoda retweeted about.
+							</p>
+						</article>
+					</div>
+				</div>
+			</div>
+										
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+			
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+
+	</body>
+</html>

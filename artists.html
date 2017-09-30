@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Artists - Re-Nova World</title>
+		
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova Artists support, people who inspire us" />
+		<meta name="keywords" content="musicians, artists, filmmakers, designers, art" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+
+	</head>
+
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Artists</a></h1>
+							<p>people who inspire us everyday</p>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://blog.renovaworld.com">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+
+			</div>
+
+		<!-- Main -->
+			<div class="wrapper style1">
+				<div class="container">
+
+					<!-- MUSICIANS -->
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Musicians</a></h2>
+							<p>
+								In this journey of music making, we came across many artists who helped us learn a lot of things. We present to you all these people with their amazing music.
+							</p>
+						</header>
+						<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/store11.jpg" alt="" /></a> -->
+					</article>
+					
+					<div class="row">
+						<!-- VISHAL IYER -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/pic07.jpg" alt="" /></a> -->
+							<center>
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/19295335&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
+							</iframe>
+							</center>
+							<header>
+								<h3><a href="#">Vishal Iyer</a></h3>
+							</header>
+							<!--
+							<p>
+								<center><strong>Genre</strong>: Rap instrumental</center>
+								<br>
+								Vishal is a Prog-Metalhead, Keyboardist, Drummer.
+							</p>
+							-->
+						</article>
+
+						
+						<!-- SYED SABEEH KARHANI -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/pic09.jpg" alt="" /></a> -->
+							<center>
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/10258293&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Syed Sabeeh Karhani</a></h3>
+							</header>
+						</article>
+
+						<!-- ABHISHEK SHARMA -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/pic09.jpg" alt="" /></a> -->
+							<center>
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/68299167&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Abhishek Sharma</a></h3>
+							</header>
+						</article>
+
+
+						<!-- NI*NO -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/pic08.jpg" alt="" /></a> -->
+							<center>
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/25128948&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</center>
+							<header>
+								<h3><a href="#">NI*NO (Antonino)</a></h3>
+							</header>
+						</article>
+
+						<!-- ASHIT SHARMA -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/pic09.jpg" alt="" /></a> -->
+							<center>
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/23120628&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Ashit Sharma</a></h3>
+							</header>
+						</article>
+
+						<!-- RE_SCAPE -->
+						<article class="4u special">
+							<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/pic09.jpg" alt="" /></a> -->
+							<center>
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/11363354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+							</center>
+							<header>
+								<h3><a href="#">Re_Scape</a></h3>
+							</header>
+						</article>
+
+						<section>
+							<header>
+								<h3>Musicians</h3>
+							</header>
+							<p>
+								Music unites everyone beyond all boundaries. We love to meet new people who have similar thoughts as ours. Technology and internet has surely made this easier than ever. Though we don't have a collaboration project yet, we hope to come up with one soon. If you think it's worth it, give a shout out on social media and let these sounds reach more people.
+							</p>
+						</section>
+					</div>
+					<!-- MUSICIANS -->
+				
+					<hr>
+
+					<!-- FILM MAKERS -->
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Film Makers</a></h2>
+							<p>
+								Short films and videos can have a huge impact on the way we see the world. VFX has the power to carry our imagination to the screens.
+							</p>
+						</header>
+					</article>
+					<div class="row">
+						<!-- MILLION PIXELS -->
+						<article class="6u special">
+							<div class="video-container">
+							<iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLlkEM6bvfY78DF5fPur7SUmGVXW3R-JiL" frameborder="0" allowfullscreen>
+							</iframe>
+							</div>
+							<header>
+								<h3>Million Pixels</h3>
+							</header>
+						</article>
+						
+						<!-- GBH PRODUCTIONS -->
+						<article class="6u special">
+							<div class="video-container">
+							<iframe width="560" height="315" src="//www.youtube.com/embed/Aa7QV6xEbRw" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<header>
+								<h3>GBH Productions</h3>
+							</header>
+
+						<!-- <a href="#" class="image featured"><img src="http://renovaworld.com/images/store11.jpg" alt="" /></a> -->
+						</article>
+					</div>	
+					<!-- FILM MAKERS -->	
+
+					<hr>
+
+					<!-- DESIGNERS -->
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Designers</a></h2>
+							<p>
+								From sketching to creating amazing patterns for clothing, designers have always fascinated us with their imaginations and skills.
+							</p>
+							<br>
+
+							<a href="https://www.facebook.com/RITURAJSARTWORK" target="_blank"><h3>RITU RAJ'S ARTWORK</h3></a>
+							<br>
+						</header>
+					</article>
+
+					<!-- RITU RAJ DESIGNS -->
+
+					<div class="row">
+						
+
+						<article class="3u special">
+							<a href="https://www.facebook.com/RITURAJSARTWORK" target="_blank">
+								<span class="image featured"><img src="http://renovaworld.com/images/rr1.jpg" alt="" /></span>
+							</a>
+						</article>
+						
+						<article class="3u special">
+							<a href="https://www.facebook.com/RITURAJSARTWORK" target="_blank">
+								<span class="image featured"><img src="http://renovaworld.com/images/rr2.jpg" alt="" /></span>
+							</a>
+						</article>
+
+						<article class="3u special">
+							<a href="https://www.facebook.com/RITURAJSARTWORK" target="_blank">
+								<span class="image featured"><img src="http://renovaworld.com/images/rr3.jpg" alt="" /></span>
+							</a>
+						</article>
+
+						<article class="3u special">
+							<a href="https://www.facebook.com/RITURAJSARTWORK" target="_blank">
+								<span class="image featured"><img src="http://renovaworld.com/images/rr4.jpg" alt="" /></span>
+							</a>
+						</article>
+
+						<article class="special">
+							<a href="https://www.facebook.com/RITURAJSARTWORK" target="_blank">
+								<span class="image featured"><img src="http://renovaworld.com/images/rr5.jpg" alt="" /></span>
+							</a>
+						</article>
+
+						<!-- RITU RAJ DESIGNS -->
+
+					</div>	
+					<!-- DESIGNERS -->
+
+				</div>
+			</div>
+
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+			
+	</body>
+</html>

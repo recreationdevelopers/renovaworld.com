@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Blog - Re-Nova World</title>
+
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova World Blog" />
+		<meta name="keywords" content="articles, poems, tutorials, music, songs, tracks, soundtracks" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Re-Creation Ideas</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://blog.renovaworld.com">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Poems</a></h2>
+							<p>
+								Words have a lot of power in them. When made musical, the power only increases.
+							</p>
+						</header>
+
+						<!--  Albums  -->
+						<div class="row">
+
+							<article class="6u special">
+								<!-- <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a> -->
+								<header>
+									<center><h3>I Listen</h3></center>
+								</header>
+								<p>		It’s beautiful,
+<br>
+										This weather, these birds,
+<br>
+										The wind, the calmness.
+<br>
+										The way they all sync
+<br>
+										Perfectly like the notes of a major chord,
+<br>
+										Creating symphonies of life,
+<br>
+										So mesmerizing that one can only listen, forever!
+<br>
+										And in all of this,
+<br>
+										I close my eyes and listen
+<br>
+										To the vastness of the sky
+<br>
+										And the drops of water
+<br>
+										The roar of the factories
+<br>
+										And the buzzing of the bees.
+										<br>
+<br>
+										It’s beautiful
+<br>
+										How everything has its own sound,
+<br>
+										Unique to its existence.
+<br>
+										The rain and its sound of hope,
+<br>
+										The leaves and their sound of life,
+<br>
+										The butterflies and the birds flying,
+<br>
+										I listen to everything, all the time.
+<br>
+										It’s amazing how easy it is,
+<br>
+										But often the most ignored,
+<br>
+										The ability to hear the world,
+<br>
+										For what it has to say.
+										<br>
+<br>
+										It’s beautiful,
+<br>
+										This song, it’s melodies
+<br>
+										The chords, the feel,
+<br>
+										The way it all syncs
+<br>
+										Perfectly like this weather,
+<br>
+										Creating the ambience so nice,
+<br>
+										So mesmerizing that I can only listen to it, forever!
+<br>
+										And in all of this
+<br>
+										I close my eyes,
+<br>
+										To listen, to feel alive,
+<br>
+										I find peace in listening to life.
+									<br>
+								</p>
+							</article>
+
+							<article class="6u special">
+								<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+								<header>
+								<center><h3>The Beauty of Sound</h3></center>
+							</header>
+							<p>
+								Listen to the voices that surround you,
+								<br>
+								The air has something to say,
+								<br>
+								When everyone has calmed down,
+								<br>
+								When everyone is far away,
+								<br>
+								And you're all alone in the room,
+								<br>
+								Listening to the space around,
+								<br>
+								The hiss you feel in your ears,
+								<br>
+								Is louder than ever, so profound!
+<br>
+<br>
+								In the silence of the night,
+								<br>
+								When everyone is in his dreams,
+								<br>
+								You can hear time ticking in the clock,
+								<br>
+								The heart beats louder, it seems,
+								<br>
+								The footsteps, the rain drops, the wind,
+								<br>
+								Everything is clearer around,
+								<br>
+								In the silence you hear more,
+								<br>
+								That's the beauty of sound!
+								</p>
+							</article>
+
+						</div>
+	
+					</article>
+					
+				</div>
+
+			</div>
+
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+
+	</body>
+</html>

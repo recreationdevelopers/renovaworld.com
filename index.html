@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Re-Nova World</title>
+
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova World - Creating symphonies of life" />
+		<meta name="keywords" content="music, studio, song, multimedia" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+
+	</head>
+
+	<body class="homepage">
+		<div class="head"></div>
+
+		<!-- Header -->
+		<div id="header">
+			<!-- Inner -->
+			<div class="inner">
+				<header>
+					<h1><a href="#" id="logo">Re-Nova World</a></h1>
+					<hr />
+					<p>creating symphonies of life</p>
+				</header>
+				<footer>
+					<a href="#newupdate" class="button circled scrolly">Enter</a>
+				</footer>
+			</div>
+
+			<!-- Nav -->
+				<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://renovaworld.com/blog.html">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+			
+		</div>
+
+                <!-- New Update -->
+                        <div id="newupdate" style="background-color: #F0F4F4;" class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+				<div class="row">
+                                        <article class="4u special">
+					<h2>New Updates</h2>
+					<p>
+						We released our first jingle that is to be featured in an online podcast channel.
+						<br>
+						The track is called <strong>Level Unlocked</strong> and is available under creative common license for free usage.
+					</p>
+                                        </article>
+                                        <article class="8u">
+                                          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230028013&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                                        </article>
+				</div>
+                                </article>
+                                </div>
+			</div>
+
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Hi. Welcome to <strong>Re-Nova</strong>.</h2>
+					<p>
+						<strong>Nova</strong> is the inner explosion in a star that makes it glow, and <strong>renovation</strong> aims at the betterment of the society.
+						<br>
+						<strong>Re-Nova</strong> is all about creating something from our hearts and standing up together with an inner explosion to renovate the world into a better place.
+					</p>
+				</header>
+			</section>
+
+		<!-- Carousel -->
+			<section class="carousel">
+				<div class="reel">
+
+					<article>
+						<span class="image featured"><img src="http://renovaworld.com/images/pic02 02.jpg" alt="" /></span>
+						<header>
+							<h3><span>Re-Nova Studio</span></h3>
+						</header>
+						<p>We use a Yamaha PSR E343 keyboard, Behringer XNYX 302 USB Mixer, Shure SV100 microphone and VSTs for production</p>							
+					</article>
+				
+					<article>
+						<span class="image featured"><img src="http://renovaworld.com/images/pic01 01.jpg" alt="" /></span>
+						<header>
+							<h3><span>Stagelight Artist</span></h3>
+						</header>
+						<p>We are part of the <a href="http://us.openlabs.com/" target="_blank">Open Labs</a>' Stagelight Artist Community since 2013. We have recorded many tracks on this amazing DAW.</p>							
+					</article>
+				
+					<article>
+						<span class="image featured"><img src="http://renovaworld.com/images/pic03 03.jpg" alt="" /></span>
+						<header>
+							<h3><span>Soundbank</span></h3>
+						</header>
+						<p>Explorer is our in-progress soundbank. It consists of various tracks and sounds. It is an open source project. <a href="https://www.facebook.com/renovaofficial/app_205521576149308" target="_blank">Click here</a> to be a part.</p>							
+					</article>
+				
+					<article>
+						<span class="image featured"><img src="http://renovaworld.com/images/pic04 04.jpg" alt="" /></span>
+						<header>
+							<h3><span>Original Soundtracks</span></h3>
+						</header>
+						<p>Re-Nova OSTs is our project on movie background scores. We have made tracks that have been featured in some short videos.</p>							
+					</article>
+				
+					<article>
+						<span class="image featured"><img src="http://renovaworld.com/images/pic05 05.jpg" alt="" /></span>
+						<header>
+							<h3><span>Jam & Fun</span></h3>
+						</header>
+						<p>Our portable studio is filled with new beats and stuff almost all the time. Session contains tracks that were made during experiments.</p>							
+					</article>
+
+					
+
+				</div>
+			</section>
+			
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+	
+	</body>
+</html>

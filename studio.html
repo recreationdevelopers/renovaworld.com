@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Studio - Re-Nova World</title>
+		
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova Online Studio, apps by ButtonBass" />
+		<meta name="keywords" content="studio, music, instruments, flash, online" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Online Studio</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://blog.renovaworld.com">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Create Music</a></h2>
+							<p>
+								<a href="http://www.buttonbass.com" target="_blank">Button Bass</a> has created some amazing tools to create music online. Check them out here.
+								<br>
+								<i>(Requires flash player and might not work on mobile)</i>
+							</p>
+						</header>
+					</article>
+					<div class="row">
+						<!-- 8 BIT PIANO -->
+						<article class="6u special">
+							<object width="100%" height="300">
+								<param name="movie" value="http://www.buttonbass.com/images/8BitPiano.swf">
+								<param name="wmode" value="transparent">
+								<embed src="http://www.buttonbass.com/images/8BitPiano.swf" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="300"></embed></object>
+							<header>
+								<h3><a href="http://www.buttonbass.com/8Bit.html" target="_blank">8 bit Piano</a></h3>
+							</header>
+						</article>
+
+						<!-- DUBSTEP PIANO -->
+						<article class="6u special">
+							<object width="100%" height="300"><param name="movie" value="http://www.buttonbass.com/images/pianoDS700.swf"><param name="wmode" value="transparent"><embed src="http://www.buttonbass.com/images/pianoDS700.swf" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="300"></embed></object>
+							<header>
+								<h3><a href="http://www.buttonbass.com/DubstepPianoPage.html" target="_blank">Dubstep Piano</a></h3>
+							</header>
+						</article>
+					</div>
+					<br>
+					<br>
+
+					<!-- PLAYER PIANO -->
+					<article id="main" class="special">
+						<object width="100%" height="250"><param name="movie" value="http://www.buttonbass.com/images/PianoEditor.swf"><param name="wmode" value="transparent"><embed src="http://www.buttonbass.com/images/PianoEditor.swf" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="250"></embed></object>
+						<header>
+							<h3><a href="http://www.buttonbass.com/PlayerPiano.html" target="_blank">Player Piano</a></h3>
+						</header>
+					</article>
+
+
+					<hr>
+
+					<!-- DUBSTEP CUBE -->
+						<article id="main" class="special">
+							<object width="100%" height="680"><param name="movie" value="http://www.buttonbass.com/images/greenstack.swf"><param name="wmode" value="transparent"><embed src="http://www.buttonbass.com/images/greenstack.swf" type="application/x-shockwave-flash" wmode="transparent" width="100%" height="680"></embed></object>
+							<header>
+								<h3><a href="http://www.buttonbass.com/dubstepcube.html" target="_blank">Dubstep Cube</a></h3>
+							</header>
+					<br>
+						<header>
+						<p>
+						All these instruments are created by <a href="http://www.buttonbass.com" target="_blank">Button Bass</a>. Check out the <a href="http://www.buttonbass.com" target="_blank">website</a> for more.
+						</p>
+						</header>
+						</article>
+
+				</div>
+
+			</div>
+
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+	
+	</body>
+</html>

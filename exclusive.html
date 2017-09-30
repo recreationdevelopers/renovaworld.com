@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Exclusive - Re-Nova World</title>
+		
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova Exclusive content, offers from partners, free downloads and more" />
+		<meta name="keywords" content="exclusive, music, download, offers, news, updates, free, partners" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+
+	</head>
+
+	<body class="left-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Exclusive</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://blog.renovaworld.com">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			
+			<div class="wrapper style1">
+
+				<div class="container">
+					<div class="row 200%">
+
+						<!-- LEFT BAR STUFF -->
+						<div class="4u" id="sidebar">
+							<hr class="first" />
+							<section>
+								<header>
+									<h3><center><a href="#">Stagelight Music Contest</a></center></h3>
+									<br>
+									<center><img src="http://renovaworld.com/images/olcontest.jpg"/></center>
+								</header>
+								<p>
+									Open Labs has teamed up with Linkin Park and Timbaland for an online music contest. Prizes worth $3,000 sponsored by Guitar Center. You also get to be a part of <a href="http://us.openlabs.com/index.php/artists/artist-community" target="_blank">Stagelight Artist Community</a>.
+								</p>
+								<footer>
+									<center><a href="http://us.openlabs.com/index.php/contest" class="button" target="_blank">Participate</a></center>
+								</footer>
+							</section>
+							<hr />
+							<section>
+								<header>
+									<h3><span>More from our partners</span></h3>
+								</header>
+								<p>
+									Get special offers and free stuff from our sponsors and collaborators.
+								</p>
+
+								<!-- Synth -->
+								<a href="http://www.divilabs.com/p/downloads.html" target="_blank">
+									<div class="row 50% no-collapse">
+										<div class="4u">
+										<span class="image fit"><img src="http://renovaworld.com/images/synth1.jpg" alt="" /></span>
+										</div>
+										<div class="8u">
+										<h4>Re-Nova Synth</h4>
+										<p>
+											Free download our new VST synth launched by Digital iVision Labs.
+										</p>
+										</div>
+									</div>
+								</a>
+								<br>
+
+
+								<!-- Divilabs MATLAB -->
+								<a href="http://www.divilabs.com/p/downloads.html" target="_blank">
+								<div class="row 50% no-collapse">
+									<div class="4u">
+										<span class="image fit"><img src="http://renovaworld.com/images/divilabs1.png" alt="" /></span>
+									</div>
+									<div class="8u">
+										<h4>MATLAB Files</h4>
+										<p>
+											Digital iVision Labs' free MATLAB and C programming project files.
+										</p>
+									</div>
+								</div>
+								</a>
+								<br>
+
+								<!-- Mech Junction ebooks -->
+								<a href="http://mechjunction.com/resources/e-books/" target="_blank">
+								<div class="row 50% no-collapse">
+									<div class="4u">
+										<span class="image fit"><img src="http://renovaworld.com/images/mechj1.png" alt="" /></span>
+									</div>
+									<div class="8u">
+										<h4>Exclusive eBooks</h4>
+										<p>
+											Mech Junction brings you ebooks for mechanical and automotive engineering.
+										</p>
+									</div>
+								</div>
+								</a>
+								<br>
+
+								<!-- CLICK ROOTS TUTORIALS -->
+								<a href="http://www.clickroots.com/electronics-tutorials/push-button-connection-in-pull-up-configuration" target="_blank">
+								<div class="row 50% no-collapse">
+									<div class="4u">
+										<span class="image fit"><img src="http://renovaworld.com/images/cr1.png" alt="" /></span>
+									</div>
+									<div class="8u">
+										<h4>Free tutorials</h4>
+										<p>
+											ClickRoots.com brings you tutorials on electronics, C++ programming, and downloads.
+										</p>
+									</div>
+								</div>
+								</a>
+								<br>
+
+								<footer>
+									<div class="container">
+										<a href="#" class="button" data-reveal-id="myModal1">Monthly Newsletter Sign up </a>					
+
+										<!-- NEWSLETTER SIGN UP FORM -->
+										
+										<div id="newslettersignupyo"></div>
+
+									</div>
+								</footer>
+							</section>
+						</div>
+
+						<!-- MAIN STUFF -->
+						<div class="8u important(collapse)" id="content">
+
+							<!-- Sam Track -->
+							<header>
+								<h2><a href="#"><center>I Still Remember</center></a></h2>
+									<center>
+									composed and produced by Sam Haldar
+									</center>
+							</header>
+							<article class="special">
+								<div class="video-container">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/Hve41tCpP0g" frameborder="0" allowfullscreen>
+									</iframe>
+								</div>
+								<br>
+								<center>
+									<a id="sharekaro" target="_blank" class="button" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://www.facebook.com/isamhaldar&amp;p[images][0]=http://renovaworld.com/images/sam.jpg&amp;p[title]=Check out Sam Haldar's music&amp;p[summary]=Get free downloads, listen to music and much more.">Share to Download for free</a>
+									<a id="activatedownload" style="display: none;" href="http://adf.ly/1A0CD5" class="button" target="_blank">Free Download</a></center>
+							</article>
+							<!-- D3 PROMO 
+							<header>
+								<h2><a href="#"><center>Distinct 3</center></a></h2>
+									<center>
+									A Million Pixels Production - Coming Soon
+									</center>
+							</header>
+							<article class="special">
+								<a href="https://www.youtube.com/user/MillionPixels10" target="_blank">
+									<span class="image featured"><img src="http://renovaworld.com/images/d33.jpg" alt="" /></span>
+								</a>
+							</article>
+							-->
+							<hr>
+							<article id="main">
+								<header>
+									<h2><a href="#"><center>Giveaways</center></a></h2>
+										<center>
+										exclusive free downloads
+										</center>
+									<p>
+										Every now and then we give away free stuff here on our website. Songs, project files, VST plugins and more. This week we are giving away one of our project file. Stay tuned for more.
+									</p>
+									
+								</header>
+								<br>
+
+								<!-- Off the Edge Giveaway -->
+								<center><h3><strong>Off The Edge - Stagelight Project File</strong></h3></center>
+								<br>
+    							
+    							<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120583739%3Fsecret_token%3Ds-7HXrY&amp;color=00bdff&amp;auto_play=false&amp;show_artwork=true"></iframe>
+    							
+
+    
+    							<p>We made this track using Open Labs Stagelight Linkin Park version and an year ago, Mike Shinoda retweeted about it. It was one of the best day of our lives so we are giving the stagelight project file of the track as a free download. 
+    							You'll require a copy of Stagelight Linkin Park Edition to open this file and listen to the drum loops, which you can download <i><a href="http://us.openlabs.com/index.php/products/linkin-park-edition" target="_blank">here</a></i>.
+      							
+      							You'll also require Cakewalk's SI Strings plugin that you can get <a href="http://www.cakewalk.com/Products/StudioInstruments/feature.aspx/Studio-Instruments-Strings" target="_blank"><i>here</i></a>.
+      							<br>
+      							For any help or querries, feel free to contact us at <a href="mailto:renovaofficial@gmail.com" >renovaofficial@gmail.com</a>. Have fun creating music!
+    							</p>
+      
+      							<p class="pswrd"><center><strong>RAR File Password</strong>: musicforgood</center></p>
+      							
+      							<center><img src="http://renovaworld.com/images/downloadote.jpg" height="300px" width="300px" /></center>
+      							<center><a href="http://bit.ly/Re-NovaMikeShinoda19thFebOffTheEdgeStagelightLP" target="_blank" class="downloadBtn">
+    							&nbsp; &nbsp;Download Off The Edge.song&nbsp; &nbsp;
+										</a></center>
+
+							</article>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+			
+		<!-- Music player -->
+			<div id="rnmusicplayer"></div>
+
+		<!-- Music Player Details -->
+			<div id="rnmusicplayerdetails"></div>
+
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+
+	<!-- Share to download -->
+	<script>
+		$(function(){
+			$('#sharekaro').click(function(){
+				$('#sharekaro').css('display', 'none');
+				$('#activatedownload').css('display', 'inline-block');
+			});
+		});
+	</script>
+	
+	</body>
+</html>

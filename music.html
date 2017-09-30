@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Music - Re-Nova World</title>
+
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Re-Nova Music and Soundtracks" />
+		<meta name="keywords" content="music, songs, tracks, soundtracks" />
+		<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="http://renovaworld.com/js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="http://renovaworld.com/js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="http://renovaworld.com/css/skel.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-desktop.css" />
+			<link rel="stylesheet" href="http://renovaworld.com/css/style-noscript.css" />
+		</noscript>
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Music</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<script type="text/javascript" src="http://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
+						<ul id="forlinkchange">
+							<li><a href="http://renovaworld.com/index.html">Home</a></li>
+							<li><a href="http://renovaworld.com/music.html">Music</a></li>
+							<li><a href="http://renovaworld.com/studio.html">Studio</a></li>
+							<li><a href="http://renovaworld.com/store.html">Store</a></li>
+							<li><a href="http://renovaworld.com/exclusive.html">Exclusive</a></li>
+							<li>
+								<a href="#">Partners</a>
+								<ul>
+									<li>
+										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+										<!-- <ul>
+											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+											<li><a href="#">faceebook</a></li>
+											<li><a href="#">twitter</a></li>
+											<li><a href="#">offers</a></li>
+										</ul> -->
+									</li>
+									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+								</ul>
+							</li>
+							<li><a href="http://renovaworld.com/artists.html">Artists</a></li>
+							<li><a href="http://blog.renovaworld.com">Blog</a></li>
+						</ul>
+							
+						<!-- Dropdown and Current Page link to '#' -->
+						<script>
+
+							// DROPDOWN
+							$('#nav > ul').dropotron({ 
+								mode: 'fade',
+								speed: 350,
+								noOpenerFade: true,
+								alignment: 'center'
+							});
+
+							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+							$(function(){
+							    $page = "http://renovaworld.com/" + $.url.attr("file");
+							    if(!$page) {
+							        $page = 'index.html';
+							    }
+							    $('#forlinkchange li a').each(function(){
+							        var $href = $(this).attr('href');
+							        if ( ($href == $page) || ($href == '') ) {
+							            $(this).attr('href', '#');
+							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+							        }
+							        /*
+							        else {
+							            $(this).removeClass('on');
+							        }
+							        */
+							    });
+							});
+
+						</script>
+
+					</nav>
+
+			</div>
+			
+		<!-- Main -->
+			<div class="wrapper style1">
+
+				<div class="container">
+					<article id="main" class="special">
+						<header>
+							<h2><a href="#">Tracks & Albums</a></h2>
+							<p>
+								We have compositions in various genres. Every song has been an adventure, a journey towards a better sound. There is a story behind our tracks.
+							</p>
+						</header>
+
+						<!--  Albums  -->
+						<div class="row">
+
+							<article class="4u special">
+								<!-- <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a> -->
+								<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/10038707&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+								<header>
+									<h3><a href="#">Explorer</a></h3>
+								</header>
+								<p>
+									Explorer is the idea to create sounds and melodies for various kinds of human emotions. This involves sound synthesis and design to test and apply sound's ability to control our emotions.
+									<br>
+
+									A thriller sound can create a sense of curiosity, a warm sound can make people feel at ease. Our aim is to search, create and bring all those sounds into one place and that's why we call this project - EXPLORER.
+								</p>
+							</article>
+
+							<article class="4u special">
+								<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+								<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/4260589&amp;theme_color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+								<header>
+									<h3><a href="#">Re-Nova OSTs</a></h3>
+								</header>
+								<p>
+									We have been making movie background scores as part of our story telling idea. These Original Soundtracks (OSTs) can be used in short films or scenes as suitable.
+									<br>
+									Inspired by Hans Zimmer, Ramin Djwadi & Mike Shinoda, we have been adding more tracks to this album since it's first release. As of now we have tracks for thriller, suspense and emotional scenes.
+								</p>
+							</article>
+
+							<article class="4u special">
+								<!-- <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a> -->
+								<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/4260579&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+								<header>
+									<h3><a href="#">Session</a></h3>
+								</header>
+								<p>
+									Jamming is fun. Recording while jamming is even better. It helps us to collect all the riffs that we accidently come up with while exploring various instruments and effects.
+									<br>
+									Session contains tracks that were initially experiments or part of learning new skill. Tracks in this album are and will always be available for free download.
+								</p>
+							</article>
+						</div>
+
+						<section>
+								<header>
+									<center><h3>Sounds | Songs | Stories</h3></center>
+								</header>
+								<p>
+									We have a soundbank, an original soundtrack album and a collection of instrumentals, all available for download. Creating these sounds & songs has been a great experience for us and the supoort from audience has helped us come this far. If these tracks can inspire you and make you feel attached to them, we believe we have done our job. Hope to bring more of these soon.
+								</p>
+						</section>
+
+						
+						<div id="paginatekaro" class="row">
+							<!-- Individual Tracks -->
+
+							<!-- Friends -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/161417460&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> Aug 3, 2014
+									<br>
+									<strong>Genre:</strong> EDM
+									<br>
+									This song began as part of making an EDM beat. We were playing around with effects like sidechain that lead to the sweeping feel the track has. Then there were piano melodies from our jamming session that we incorporated into the track as bridge. Later on, an orchestral mashup version of this was selected as <a href="https://soundcloud.com/prashantmishra_re-nova/gravitas-2014-anthem" target ="_blank"><strong>graVITas 2014 Anthem</strong></a>. Friendship Day was near while we were working on this and it kind of gave a happy feel so we kept the title as 'Friends' and uploaded for download.
+								</p>
+							</div>
+
+							<!-- Fireball ft. Abhinav Daga -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163409891&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> Aug 16, 2014
+									<br>
+									<strong>Genre:</strong> Rock
+									<br>
+									There are basically two ways a song is composed. Writing the notes over a basic melody or live while jamming. Luckily, we had Abhinav, a lead guitarist, with us in one of our jamming session. We recorded the riffs while jamming and the best one was included in the track. We also made a modified version of this track but that will be made available later.
+								</p>
+								<br />
+							</div>
+
+							<!-- Fallen Leaf (preview) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/154370512&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> June 15, 2014
+									<br>
+									<strong>Genre:</strong> EDM/Orchestral
+									<br>
+									It is always fun to mix different genres of music to create a fusion. Dubstep has been our favorite and sound of strings is so deviant, we decided to mashup these. 'Fallen Leaf', the title came from an incident that happened while we were working on this track. It is a work-in-progress and complete track will be available soon.
+								</p>
+								<br />
+							</div>
+
+							<!-- Thunderbolt (Sudden Death) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/114822217&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> October 11, 2013
+									<br>
+									<strong>Genre:</strong> Epic/Soundtrack
+									<br>
+									This track was inspired by Hans Zimmer's score for The Dark Knight. We thought of making something that would give a rising feel and involve orchestral strings. 'Sudden Death' was added for its style of ending. We made many versions of this track - without strings and with some modificatins - that will be available in our store as complete pack for download.
+								</p>
+								<br />
+							</div>
+
+							<!-- Blazed (preview) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108835077&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> September 4, 2013
+									<br>
+									<strong>Genre:</strong> Soundtrack
+									<br>
+									We needed a thriller OST for a movie scene when we came up with this track. So we thought of making something with heavy drums and strings. A friend of ours gave the title 'Blazed' when we first sent her the track for reviews. Full version of this track is available on <a href="http://re-nova.bandcamp.com/track/re-nova-blazed" target="_blank">bandcamp</a> for download.
+								</p>
+								<br />
+							</div>
+
+							<!-- I Still Have A Dream (ft. Martin Luther King Jr. Speech) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/99247449&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> July 1, 2013
+									<br>
+									<strong>Genre:</strong> Electronic
+									<br>
+									Many people have inspired us in our journey. One among them is Martin Luther King Jr. His energetic speeches have always been life changing for a lot of people. Linkin Park's idea of embedding speech in an instrumental felt great and we had an instrumental that kind of needed something over it. So we decided to add the famous 'I have a dream' into our track.
+								</p>
+								<br />
+							</div>
+
+							<!-- Night Out (preview) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/98216772&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> June 24, 2013
+									<br>
+									<strong>Genre:</strong> EDM
+									<br>
+									This was our first experience in EDM. The idea of 'riser' before bringing the drop was amazing and it really pumped us up everytime we listened to an EDM track. During on of our jam session, we had this track made in patches which was later mixed together in the form it is now in.
+								</p>
+								<br />
+							</div>
+
+							<!-- Mask (demo) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92806125&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> May 19, 2013
+									<br>
+									<strong>Genre:</strong> Rap Instrumental
+									<br>
+									We wanted a rap instrumental, but not of regular style. We wanted it to be ambient and calm. This track has been one of our favorites for it's sound quality. We gave it's project file as a free giveaway. Complete version is avilable on <a href="http://re-nova.bandcamp.com/track/re-nova-mask">bandcamp</a>.
+								</p>
+								<br />
+							</div>
+
+							<!-- Past (preview) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91375661&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> May 9, 2013
+									<br>
+									<strong>Genre:</strong> Ambient
+									<br>
+									There are times in our lives when we need to express our hearts in order to let go of the memories we are trapped in. This track was part of our style of telling such a story. It got featured in a short film on 'Suicide Prevention'. Lively drums, bells and a soothing atmosphere with piano made it suitable for an emotional scene.
+								</p>
+								<br />
+							</div>
+
+							<!-- 20 Seconds (Instrumental) [LP StageLight] -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/84112747&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> March 20, 2013
+									<br>
+									<strong>Genre:</strong> Soft Rock
+									<br>
+								
+									This was our 3rd track on Open Labs' Stagelight. We were excited about the easy interface this DAW has and we couldn't stop ourseleves from creating more songs on it. The in-built piano and drum sounds are so perfect. The track was kept soothing with beats and strings to fill the space.
+								</p>
+								<br />
+							</div>
+
+							<!-- Again -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/76685323&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> Jan 27, 2013
+									<br>
+									<strong>Genre:</strong> Ambient
+									<br>
+									Life cannot be cheerful all the time. We wanted to create something dark. This track was came as a result of this idea. Shattered heart with no ability to bear any more pain needs a support. But hope saves us all. A white noise riser takes us to that hope.
+								</p>
+								<br />
+							</div>
+
+							<!-- Off The Edge (StageLight Linkin Park Edition) -->
+							<div class="6u special">
+								<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/74900301%3Fsecret_token%3Ds-klsDy&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+								<p><strong>Release date:</strong> Jan 14, 2013
+									<br>
+									<strong>Genre:</strong> Rock
+									<br>
+									Linkin Park's Mike Shinoda retweeted about this track. It was a proud moment for us. This was our 2nd track on Stagelight. We used loops and original LP sounds. It was made for a promo video for our partner Mech Junction's event Mechnovate 2013. A cinematic version of is availble in the Exclusive section.
+								</p>
+								<br />
+							</div>
+
+						</div>
+						
+						<br>
+						<br>	
+						<section>
+							<header>
+								<center><h3>You're awesome!</h3></center>
+							</header>
+							<p>
+								We love our audience and we hope to come up with more songs, instrumentals and sounds that can be friends with you all whenever you need them. Music has the power to keep us all motivated and headed towards a better future. Well, that's what Re-Nova is all about. Thank you for your support. 
+							</p>
+						</section>
+					</article>
+					
+				</div>
+
+			</div>
+
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+
+	</body>
+</html>
