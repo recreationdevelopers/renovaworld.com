@@ -1,0 +1,70 @@
+<!-- NEWSLETTER FORM IS myModal1 -->
+
+<div id="myModal1" class= "reveal-modal">
+	
+	<form action="" id="form" target="_self" onsubmit="">
+
+		<center><h3>Re-Nova Monthly Newsletter</h3></center>
+		<center><h5>By signing up you agree to receive monthly email from us</h5></center>
+	  
+		<br>
+	  <p>
+	    <label for="name">Name:</label>
+	    <input type="text" name="Name" id="name" required>
+	  </p>
+	 
+ 	  <p>
+	    <label for="email">Email:</label>
+	    <input type="email" name="Email" id="email" required>
+	  </p>
+
+	  <button id="ButtonSubmit" class="button" type="submit">Sign Up</button>
+	  
+	</form>	
+	
+	<a class="close-reveal-modal">&#215;</a>											
+</div>
+
+<script>
+
+	function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    function postToGoogle() {
+    	var name = $('#name').val();
+        var email = $('#email').val();
+
+        if ((name !== "") && (email !== "") && (validateEmail(email))) {
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1mQYCbyAmt8jiGYVFKp36EWYWjKEaNUPV4zffHVMHz2c/formResponse",
+                data:{ "entry.482041914": name, "entry.2090693418": email },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                    	// SUCCESS MESSAGE
+                        window.location.replace("http://renovaworld.com/thankyou.html");
+                    },
+                    200: function () {
+                    	// ERROR MESSAGE
+                        window.location.replace("http://renovaworld.com/error.html");
+                    }
+                }
+            });
+        }
+        else{
+        	// FIELDS NOT VALID
+        	alert('Values entered are incorrect or empty. Please add valid data.');
+        }
+    }
+
+    $(document).ready(function(){
+                $('#form').submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+            });
+</script>

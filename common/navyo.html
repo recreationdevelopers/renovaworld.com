@@ -1,0 +1,60 @@
+ <script type="text/javascript" src="js/purl.js"></script> <!-- Script to change current page href to '#' -->
+<ul id="forlinkchange">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="music.html">Music</a></li>
+	<li><a href="studio.html">Studio</a></li>
+	<li><a href="store.html">Store</a></li>
+	<li><a href="exclusive.html">Exclusive</a></li>
+	<li>
+		<a href="#">Partners</a>
+		<ul>
+			<li>
+				<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+				<!-- <ul>
+					<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+					<li><a href="#">faceebook</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">offers</a></li>
+				</ul> -->
+			</li>
+			<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
+			<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
+			<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
+			<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+		</ul>
+	</li>
+	<li><a href="artists.html">Artists</a></li>
+</ul>
+	
+	<!-- Dropdown and Current Page link to '#' -->
+	<script>
+
+		// DROPDOWN
+		$('#nav > ul').dropotron({ 
+			mode: 'fade',
+			speed: 350,
+			noOpenerFade: true,
+			alignment: 'center'
+		});
+
+		// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+		$(function(){
+		    $page = $.url.attr("file");
+		    if(!$page) {
+		        $page = 'index.html';
+		    }
+		    $('#forlinkchange li a').each(function(){
+		        var $href = $(this).attr('href');
+		        if ( ($href == $page) || ($href == '') ) {
+		            $(this).attr('href', '#');
+		            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+		        }
+		        /*
+		        else {
+		            $(this).removeClass('on');
+		        }
+		        */
+		    });
+		});
+
+	</script>

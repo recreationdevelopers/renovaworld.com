@@ -1,0 +1,102 @@
+	
+	<script src="audiojs/audio.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/rnmusicplayer.css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<script>
+      $(function() { 
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+          trackEnded: function() {
+            var next = $('ol li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.addClass('playing').siblings().removeClass('playing');
+            audio.load($('a', next).attr('data-src'));
+            audio.play();
+          }
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+            first = $('ol a').attr('data-src');
+        $('ol li').first().addClass('playing');
+        audio.load(first);
+
+        // Load in a track on click
+        $('ol li').click(function(e) {
+          e.preventDefault();
+          $(this).addClass('playing').siblings().removeClass('playing');
+          audio.load($('a', this).attr('data-src'));
+          audio.play();
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+          var unicode = e.charCode ? e.charCode : e.keyCode;
+             // right arrow
+          if (unicode == 39) {
+            var next = $('li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.click();
+            // back arrow
+          } else if (unicode == 37) {
+            var prev = $('li.playing').prev();
+            if (!prev.length) prev = $('ol li').last();
+            prev.click();
+            // spacebar
+          } else if (unicode == 32) {
+            audio.playPause();
+          }
+        });
+        // Control buttons
+        // Prev
+        $('.audiojs .controlkaro .prev').click(function(){
+        	var prev = $('li.playing').prev();
+            if (!prev.length) prev = $('ol li').last();
+            prev.click();
+        });
+        //Next
+        $('.audiojs .controlkaro .next').click(function(){
+        	var next = $('li.playing').next();
+        	if (!next.length) next = $('ol li').first();
+            next.click();
+        });
+        // Open Playlist
+        $('.audiojs .controlkaro .openplaylist').click(function(){
+        	$('#toggleplaylist').slideToggle("slow");
+        });
+        
+      });
+    </script>
+
+<div id="rnmusicplayer">
+
+	<audio preload></audio>
+	
+	<ol id="toggleplaylist">
+  	<li id="freedownload"><a href="#" data-src="downloads/Re-Nova_-_D3_-_Chase.mp3">Chase (Distinct 3 OST)</a></li>
+    <li id="samdownload"><a href="#" data-src="downloads/Sam_Haldar_-_I_Still_Remember.mp3">I Still Remember (by Sam Haldar)</a></li>
+  	<li id="freedownload"><a href="#" data-src="downloads/Re-Nova_-_High_on_Bass.mp3">High on Bass</a></li>
+  	<li id="freedownload"><a href="#" data-src="downloads/Re-Nova_-_Friends_(Gravitas_2014_Anthem).mp3">Friends (Gravitas Anthem Version)</a></li>
+  	<li id="freedownload"><a href="#" data-src="downloads/Re-Nova_-_Fireball_(Mishra_Mix).mp3">Fireball (New version)</a></li>
+	</ol>
+</div>
+
+	<script>
+    // Setting href for download link for first song
+    var a_href_default = $('li.playing a').attr('data-src');
+    $('div.downloadkaro a').attr('href', 'http://adf.ly/9313275/renovaworld.com/'+a_href_default);
+
+    // Setting href for FREE Download link when song is clicked
+    $('ol#toggleplaylist li#freedownload').click(function(){
+        var a_href = $('li.playing#freedownload a').attr('data-src');
+        $('div.downloadkaro a').attr('href', 'http://adf.ly/9313275/renovaworld.com/'+a_href);
+    });
+
+    // SAM DOWNLOAD should be #
+    $('ol#toggleplaylist li#samdownload').click(function(){
+      $('div.downloadkaro a').attr({
+        href:'http://adf.ly/1A0CD5',
+        target:'_self'
+      });
+    });
+	</script>
