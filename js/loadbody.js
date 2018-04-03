@@ -2,6 +2,7 @@ $(function(){
 	// $("#nav").load("common/navyo.html");  Navigation bar (for later)
 	$("#contactusyo").load("http://renovaworld.com/common/contactusyo.html"); // Contact us Form
 	$("#newslettersignupyo").load("http://renovaworld.com/common/newslettersignupyo.html"); // Newsletter sign up form
+	$("#giftmeyo").load("http://renovaworld.com/common/giftmeyo.html"); // Gift me
 	$("#footer").load("http://renovaworld.com/common/footeryo.html"); // Footer
 	$("#rnmusicplayerdetails").load("http://renovaworld.com/common/rnmusicplayerdetails.html"); // Music Player Details
 	$("#paginatekaro").jPaginate(); // Pagination load
