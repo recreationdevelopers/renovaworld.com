@@ -8,23 +8,23 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Re-Nova World - Creating symphonies of life" />
 		<meta name="keywords" content="music, studio, song, multimedia" />
-		<link rel="stylesheet" href="https://renovaworld.com/css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
 		<!-- Main JS CDN File -->
-		<script type="text/javascript" src="https://renovaworld.com/js/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
 
 		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
-		<script type="text/javascript" src="https://renovaworld.com/js/loadhead.js"></script>
+		<script type="text/javascript" src="js/loadhead.js"></script>
 
 		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
-		<script type="text/javascript" src="https://renovaworld.com/js/loadbody.js"></script>
+		<script type="text/javascript" src="js/loadbody.js"></script>
 
 		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
 		<noscript>
-			<link rel="stylesheet" href="https://renovaworld.com/css/skel.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style-desktop.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style-noscript.css" />
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
 
 	</head>
@@ -48,67 +48,74 @@
 
 			<!-- Nav -->
 				<nav id="nav">
-						<script type="text/javascript" src="https://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
-						<ul id="forlinkchange">
-							<li><a href="https://renovaworld.com/index.html">Home</a></li>
-							<li><a href="https://renovaworld.com/music.html">Music</a></li>
-							<li><a href="https://renovaworld.com/studio.html">Studio</a></li>
-							<li><a href="https://renovaworld.com/store.html">Store</a></li>
-							<li><a href="https://renovaworld.com/exclusive.html">Exclusive</a></li>
-							<li>
-								<a href="#">Partners</a>
-								<ul>
-									<li>
-										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
-										<!-- <ul>
-											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
-											<li><a href="#">faceebook</a></li>
-											<li><a href="#">twitter</a></li>
-											<li><a href="#">offers</a></li>
-										</ul> -->
-									</li>
-									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
-									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
-									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
-									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
-								</ul>
-							</li>
-							<li><a href="https://renovaworld.com/artists.html">Artists</a></li>
-							<li><a href="https://renovaworld.com/blog.html">Blog</a></li>
-						</ul>
-							
-						<!-- Dropdown and Current Page link to '#' -->
-						<script>
+					
+						 <script type="text/javascript" src="js/purl.js"></script> <!-- Script to change current page href to '#' -->
+<ul id="forlinkchange">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="music.html">Music</a></li>
+	<li>
+		<a href="#">Studio</a>
+		<ul>
+			<li><a href="homestudio.html">Home Studio</a></li>
+			<li><a href="studio.html">Online Studio</a></li>
+		</ul>
+	</li>
+	<li><a href="store.html">Store</a></li>
+	<li><a href="exclusive.html">Exclusive</a></li>
+	<li>
+		<a href="#">Projects</a>
+		<ul>
+			<li>
+				<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+				<!-- <ul>
+					<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+					<li><a href="#">faceebook</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">offers</a></li>
+				</ul> -->
+			</li>
+			<li><a href="https://recreationdevelopers.com" target="_blank">Re-Creation Developers</a></li>
+			<li><a href="https://recreationclassroom.com" target="_blank">Re-Creation Classroom</a></li>									
+			<!-- <li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li> -->
+			<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+		</ul>
+	</li>
+	<li><a href="artists.html">Artists</a></li>
+</ul>
+	
+	<!-- Dropdown and Current Page link to '#' -->
+	<script>
 
-							// DROPDOWN
-							$('#nav > ul').dropotron({ 
-								mode: 'fade',
-								speed: 350,
-								noOpenerFade: true,
-								alignment: 'center'
-							});
+		// DROPDOWN
+		$('#nav > ul').dropotron({ 
+			mode: 'fade',
+			speed: 350,
+			noOpenerFade: true,
+			alignment: 'center'
+		});
 
-							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
-							$(function(){
-							    $page = "https://renovaworld.com/" + $.url.attr("file");
-							    if(!$page) {
-							        $page = 'index.html';
-							    }
-							    $('#forlinkchange li a').each(function(){
-							        var $href = $(this).attr('href');
-							        if ( ($href == $page) || ($href == '') ) {
-							            $(this).attr('href', '#');
-							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
-							        }
-							        /*
-							        else {
-							            $(this).removeClass('on');
-							        }
-							        */
-							    });
-							});
+		// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+		$(function(){
+		    $page = $.url.attr("file");
+		    if(!$page) {
+		        $page = 'index.html';
+		    }
+		    $('#forlinkchange li a').each(function(){
+		        var $href = $(this).attr('href');
+		        if ( ($href == $page) || ($href == '') ) {
+		            $(this).attr('href', '#');
+		            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+		        }
+		        /*
+		        else {
+		            $(this).removeClass('on');
+		        }
+		        */
+		    });
+		});
 
-						</script>
+	</script>
+
 
 					</nav>
 			
@@ -121,9 +128,9 @@
 					<article id="main" class="special">
 				<div class="row">
                                         <article class="4u special">
-					<h2>New Updates</h2>
+					<h2>Jingles</h2>
 					<p>
-						We released our first jingle that is to be featured in an online podcast channel.
+						We released our first jingle on 25th Oct 2015, that is to be featured in an online podcast channel.
 						<br>
 						The track is called <strong>Level Unlocked</strong> and is available under creative common license for free usage.
 					</p>
@@ -153,7 +160,7 @@
 				<div class="reel">
 
 					<article>
-						<span class="image featured"><img src="https://renovaworld.com/images/pic02 02.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/pic02 02.jpg" alt="" /></span>
 						<header>
 							<h3><span>Re-Nova Studio</span></h3>
 						</header>
@@ -161,35 +168,35 @@
 					</article>
 
 					<article>
-						<span class="image featured"><img src="https://renovaworld.com/images/pic01 01.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/pic01 01.jpg" alt="" /></span>
 						<header>
 							<h3><span>Stagelight Artist</span></h3>
 						</header>
-						<p>We are part of the <a href="http://us.openlabs.com/" target="_blank">Open Labs</a>' Stagelight Artist Community since 2013. We have recorded many tracks on this amazing DAW and use it almost all the time to capture ideas while traveling or anywhere else on iPad, Android or our laptop workstation. Stagelight is available on every platform and that is a boon to our workflow.</p>							
+						<p>We are part of the <a href="http://us.openlabs.com/" target="_blank">Open Labs</a>' Stagelight Artist Community since 2013. We have recorded many tracks on this amazing DAW and use it almost all the time to capture ideas while traveling or anywhere else on using iPad, Android or our laptop workstation. Stagelight is easy to use, has tonnes of amazing sounds from artists like Linkin Park and is available on every platform possible and that is a boon to our workflow.</p>							
 					</article>
 				
 					<article>
-						<span class="image featured"><img src="https://renovaworld.com/images/pic03 03.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/pic03 03.jpg" alt="" /></span>
 						<header>
-							<h3><span>Soundbank</span></h3>
+							<h3><span>Explorer - Soundbank</span></h3>
 						</header>
-						<p>Explorer is our in-progress soundbank. It consists of various tracks and sounds. It is an open source project. <a href="https://www.facebook.com/renovaofficial/app_205521576149308" target="_blank">Click here</a> to be a part. We are currently designing sounds and recording a lot of foley that will soon be released for all. We are really inspired by the amazing sound banks available in the <a href="https://getsoundly.com/" target="_blank">Soundly Pro</a> subscrption to make a bank of our own.</p>							
+						<p>Explorer is our in-progress soundbank. It is an open source project aimed at creating the best collection of great sounding sound effects and clean foley that can be used by artists. <a href="https://www.facebook.com/renovaofficial/app_205521576149308" target="_blank">Click here</a> to be a part. We are currently designing sounds and recording a lot of foley that will soon be released for all. We are really inspired by the amazing sound banks available in the <a href="https://getsoundly.com/" target="_blank">Soundly Pro</a> subscrption to make a bank of our own.</p>							
 					</article>
 				
 					<article>
-						<span class="image featured"><img src="https://renovaworld.com/images/pic04 04.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/pic04 04.jpg" alt="" /></span>
 						<header>
 							<h3><span>Original Soundtracks</span></h3>
 						</header>
-						<p>Re-Nova OSTs is our project on movie background scores. We have made tracks that have been featured in some short videos. We are working on a lot more soundtracks to add to this project that will be release as multiple albums or singles on various platforms. We will update on this website as well once they are releasd.</p>							
+						<p>Re-Nova OSTs is our project on movie background scores based in different genres including orchestration, jazz, fusion and more. Few of the tracks in this project are featured in various short films. We are working on a lot more soundtracks to add to this project that will be released as multiple albums or singles on various platforms. We also do collaboration with artists for this project. Fill the contact us form to join.</p>							
 					</article>
 				
 					<article>
-						<span class="image featured"><img src="https://renovaworld.com/images/pic05 05.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/pic05 05.jpg" alt="" /></span>
 						<header>
 							<h3><span>Jam & Fun</span></h3>
 						</header>
-						<p>Our portable studio is filled with new beats and stuff almost all the time. Session contains tracks that were made during experiments. We record almost all of our jam sessions to have tracks that can be added to this project. A lot of those sounds, loops, musical cues also get used to work on the music for our video projects and main releases.</p>							
+						<p>Our portable studio is filled with new beats and stuff almost all the time. Session contains tracks that were made during experiments. We record almost all of our jam sessions to have tracks that can be added to this project. A lot of those sounds, loops, musical cues also get used to work on the music for our video projects and main releases. We will release this project accessible to all once a good collection is ready.</p>							
 					</article>
 
 					

@@ -10,23 +10,23 @@
 		<meta name="googlebot" content="noindex">
 		<meta name="description" content="Error 404 - Page not found" />
 		<meta name="keywords" content="error, 404" />
-		<link rel="stylesheet" href="https://renovaworld.com/css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
 		<!-- Main JS CDN File -->
-		<script type="text/javascript" src="https://renovaworld.com/js/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
 
 		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
-		<script type="text/javascript" src="https://renovaworld.com/js/loadhead.js"></script>
+		<script type="text/javascript" src="js/loadhead.js"></script>
 
 		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
-		<script type="text/javascript" src="https://renovaworld.com/js/loadbody.js"></script>
+		<script type="text/javascript" src="js/loadbody.js"></script>
 
 		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
 		<noscript>
-			<link rel="stylesheet" href="https://renovaworld.com/css/skel.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style-desktop.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style-noscript.css" />
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
 
 	</head>
@@ -44,67 +44,73 @@
 				
 				<!-- Nav -->
 					<nav id="nav">
-						<script type="text/javascript" src="https://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
-						<ul id="forlinkchange">
-							<li><a href="https://renovaworld.com/index.html">Home</a></li>
-							<li><a href="https://renovaworld.com/music.html">Music</a></li>
-							<li><a href="https://renovaworld.com/studio.html">Studio</a></li>
-							<li><a href="https://renovaworld.com/store.html">Store</a></li>
-							<li><a href="https://renovaworld.com/exclusive.html">Exclusive</a></li>
-							<li>
-								<a href="#">Partners</a>
-								<ul>
-									<li>
-										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
-										<!-- <ul>
-											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
-											<li><a href="#">faceebook</a></li>
-											<li><a href="#">twitter</a></li>
-											<li><a href="#">offers</a></li>
-										</ul> -->
-									</li>
-									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
-									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
-									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
-									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
-								</ul>
-							</li>
-							<li><a href="https://renovaworld.com/artists.html">Artists</a></li>
-							<li><a href="http://blog.renovaworld.com">Blog</a></li>
-						</ul>
-							
-						<!-- Dropdown and Current Page link to '#' -->
-						<script>
+						 <script type="text/javascript" src="js/purl.js"></script> <!-- Script to change current page href to '#' -->
+							<ul id="forlinkchange">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="music.html">Music</a></li>
+								<li>
+									<a href="#">Studio</a>
+									<ul>
+										<li><a href="homestudio.html">Home Studio</a></li>
+										<li><a href="studio.html">Online Studio</a></li>
+									</ul>
+								</li>
+								<li><a href="store.html">Store</a></li>
+								<li><a href="exclusive.html">Exclusive</a></li>
+								<li>
+									<a href="#">Projects</a>
+									<ul>
+										<li>
+											<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+											<!-- <ul>
+												<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+												<li><a href="#">faceebook</a></li>
+												<li><a href="#">twitter</a></li>
+												<li><a href="#">offers</a></li>
+											</ul> -->
+										</li>
+										<li><a href="https://recreationdevelopers.com" target="_blank">Re-Creation Developers</a></li>
+										<li><a href="https://recreationclassroom.com" target="_blank">Re-Creation Classroom</a></li>									
+										<!-- <li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li> -->
+										<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+									</ul>
+								</li>
+								<li><a href="artists.html">Artists</a></li>
+							</ul>
+								
+								<!-- Dropdown and Current Page link to '#' -->
+								<script>
 
-							// DROPDOWN
-							$('#nav > ul').dropotron({ 
-								mode: 'fade',
-								speed: 350,
-								noOpenerFade: true,
-								alignment: 'center'
-							});
+									// DROPDOWN
+									$('#nav > ul').dropotron({ 
+										mode: 'fade',
+										speed: 350,
+										noOpenerFade: true,
+										alignment: 'center'
+									});
 
-							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
-							$(function(){
-							    $page = "https://renovaworld.com/" + $.url.attr("file");
-							    if(!$page) {
-							        $page = 'index.html';
-							    }
-							    $('#forlinkchange li a').each(function(){
-							        var $href = $(this).attr('href');
-							        if ( ($href == $page) || ($href == '') ) {
-							            $(this).attr('href', '#');
-							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
-							        }
-							        /*
-							        else {
-							            $(this).removeClass('on');
-							        }
-							        */
-							    });
-							});
+									// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+									$(function(){
+									    $page = $.url.attr("file");
+									    if(!$page) {
+									        $page = 'index.html';
+									    }
+									    $('#forlinkchange li a').each(function(){
+									        var $href = $(this).attr('href');
+									        if ( ($href == $page) || ($href == '') ) {
+									            $(this).attr('href', '#');
+									            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+									        }
+									        /*
+									        else {
+									            $(this).removeClass('on');
+									        }
+									        */
+									    });
+									});
 
-						</script>
+								</script>
+
 
 					</nav>
 

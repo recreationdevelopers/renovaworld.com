@@ -8,23 +8,23 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Re-Nova Exclusive content, offers from partners, free downloads and more" />
 		<meta name="keywords" content="exclusive, music, download, offers, news, updates, free, partners" />
-		<link rel="stylesheet" href="https://renovaworld.com/css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
 		<!-- Main JS CDN File -->
-		<script type="text/javascript" src="https://renovaworld.com/js/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
 
 		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
-		<script type="text/javascript" src="https://renovaworld.com/js/loadhead.js"></script>
+		<script type="text/javascript" src="js/loadhead.js"></script>
 
 		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
-		<script type="text/javascript" src="https://renovaworld.com/js/loadbody.js"></script>
+		<script type="text/javascript" src="js/loadbody.js"></script>
 
 		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
 		<noscript>
-			<link rel="stylesheet" href="https://renovaworld.com/css/skel.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style-desktop.css" />
-			<link rel="stylesheet" href="https://renovaworld.com/css/style-noscript.css" />
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
 
 	</head>
@@ -43,70 +43,75 @@
 				
 				<!-- Nav -->
 					<nav id="nav">
-						<script type="text/javascript" src="https://renovaworld.com/js/purl.js"></script> <!-- Script to change current page href to '#' -->
-						<ul id="forlinkchange">
-							<li><a href="https://renovaworld.com/index.html">Home</a></li>
-							<li><a href="https://renovaworld.com/music.html">Music</a></li>
-							<li><a href="https://renovaworld.com/studio.html">Studio</a></li>
-							<li><a href="https://renovaworld.com/store.html">Store</a></li>
-							<li><a href="https://renovaworld.com/exclusive.html">Exclusive</a></li>
-							<li>
-								<a href="#">Partners</a>
-								<ul>
-									<li>
-										<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
-										<!-- <ul>
-											<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
-											<li><a href="#">faceebook</a></li>
-											<li><a href="#">twitter</a></li>
-											<li><a href="#">offers</a></li>
-										</ul> -->
-									</li>
-									<li><a href="http://mechjunction.com/" target="_blank">Mech Junction</a></li>
-									<li><a href="http://millionpixelsproductions.com" target="_blank">Million Pixels</a></li>									
-									<li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li>
-									<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
-								</ul>
-							</li>
-							<li><a href="https://renovaworld.com/artists.html">Artists</a></li>
-							<li><a href="http://blog.renovaworld.com">Blog</a></li>
-						</ul>
-							
-						<!-- Dropdown and Current Page link to '#' -->
-						<script>
+						 <script type="text/javascript" src="js/purl.js"></script> <!-- Script to change current page href to '#' -->
+							<ul id="forlinkchange">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="music.html">Music</a></li>
+								<li>
+									<a href="#">Studio</a>
+									<ul>
+										<li><a href="homestudio.html">Home Studio</a></li>
+										<li><a href="studio.html">Online Studio</a></li>
+									</ul>
+								</li>
+								<li><a href="store.html">Store</a></li>
+								<li><a href="exclusive.html">Exclusive</a></li>
+								<li>
+									<a href="#">Projects</a>
+									<ul>
+										<li>
+											<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+											<!-- <ul>
+												<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+												<li><a href="#">faceebook</a></li>
+												<li><a href="#">twitter</a></li>
+												<li><a href="#">offers</a></li>
+											</ul> -->
+										</li>
+										<li><a href="https://recreationdevelopers.com" target="_blank">Re-Creation Developers</a></li>
+										<li><a href="https://recreationclassroom.com" target="_blank">Re-Creation Classroom</a></li>									
+										<!-- <li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li> -->
+										<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+									</ul>
+								</li>
+								<li><a href="artists.html">Artists</a></li>
+							</ul>
+								
+								<!-- Dropdown and Current Page link to '#' -->
+								<script>
 
-							// DROPDOWN
-							$('#nav > ul').dropotron({ 
-								mode: 'fade',
-								speed: 350,
-								noOpenerFade: true,
-								alignment: 'center'
-							});
+									// DROPDOWN
+									$('#nav > ul').dropotron({ 
+										mode: 'fade',
+										speed: 350,
+										noOpenerFade: true,
+										alignment: 'center'
+									});
 
-							// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
-							$(function(){
-							    $page = "https://renovaworld.com/" + $.url.attr("file");
-							    if(!$page) {
-							        $page = 'index.html';
-							    }
-							    $('#forlinkchange li a').each(function(){
-							        var $href = $(this).attr('href');
-							        if ( ($href == $page) || ($href == '') ) {
-							            $(this).attr('href', '#');
-							            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
-							        }
-							        /*
-							        else {
-							            $(this).removeClass('on');
-							        }
-							        */
-							    });
-							});
+									// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+									$(function(){
+									    $page = $.url.attr("file");
+									    if(!$page) {
+									        $page = 'index.html';
+									    }
+									    $('#forlinkchange li a').each(function(){
+									        var $href = $(this).attr('href');
+									        if ( ($href == $page) || ($href == '') ) {
+									            $(this).attr('href', '#');
+									            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+									        }
+									        /*
+									        else {
+									            $(this).removeClass('on');
+									        }
+									        */
+									    });
+									});
 
-						</script>
+								</script>
+
 
 					</nav>
-
 			</div>
 			
 		<!-- Main -->
@@ -123,7 +128,7 @@
 								<header>
 									<h3><center><a href="#">Stagelight Music Contest</a></center></h3>
 									<br>
-									<center><img src="https://renovaworld.com/images/olcontest.jpg"/></center>
+									<center><img src="images/olcontest.jpg"/></center>
 								</header>
 								<p>
 									Open Labs has teamed up with Linkin Park and Timbaland for an online music contest. Prizes worth $3,000 sponsored by Guitar Center. You also get to be a part of <a href="http://us.openlabs.com/index.php/artists/artist-community" target="_blank">Stagelight Artist Community</a>.
@@ -145,7 +150,7 @@
 								<a href="http://www.divilabs.com/p/downloads.html" target="_blank">
 									<div class="row 50% no-collapse">
 										<div class="4u">
-										<span class="image fit"><img src="https://renovaworld.com/images/synth1.jpg" alt="" /></span>
+										<span class="image fit"><img src="images/synth1.jpg" alt="" /></span>
 										</div>
 										<div class="8u">
 										<h4>Re-Nova Synth</h4>
@@ -162,7 +167,7 @@
 								<a href="http://www.divilabs.com/p/downloads.html" target="_blank">
 								<div class="row 50% no-collapse">
 									<div class="4u">
-										<span class="image fit"><img src="https://renovaworld.com/images/divilabs1.png" alt="" /></span>
+										<span class="image fit"><img src="images/divilabs1.png" alt="" /></span>
 									</div>
 									<div class="8u">
 										<h4>MATLAB Files</h4>
@@ -178,7 +183,7 @@
 								<a href="http://mechjunction.com/resources/e-books/" target="_blank">
 								<div class="row 50% no-collapse">
 									<div class="4u">
-										<span class="image fit"><img src="https://renovaworld.com/images/mechj1.png" alt="" /></span>
+										<span class="image fit"><img src="images/mechj1.png" alt="" /></span>
 									</div>
 									<div class="8u">
 										<h4>Exclusive eBooks</h4>
@@ -194,7 +199,7 @@
 								<a href="http://www.clickroots.com/electronics-tutorials/push-button-connection-in-pull-up-configuration" target="_blank">
 								<div class="row 50% no-collapse">
 									<div class="4u">
-										<span class="image fit"><img src="https://renovaworld.com/images/cr1.png" alt="" /></span>
+										<span class="image fit"><img src="images/cr1.png" alt="" /></span>
 									</div>
 									<div class="8u">
 										<h4>Free tutorials</h4>
@@ -236,7 +241,7 @@
 								</div>
 								<br>
 								<center>
-									<a id="sharekaro" target="_blank" class="button" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://www.facebook.com/isamhaldar&amp;p[images][0]=https://renovaworld.com/images/sam.jpg&amp;p[title]=Check out Sam Haldar's music&amp;p[summary]=Get free downloads, listen to music and much more.">Share to Download for free</a>
+									<a id="sharekaro" target="_blank" class="button" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://www.facebook.com/isamhaldar&amp;p[images][0]=images/sam.jpg&amp;p[title]=Check out Sam Haldar's music&amp;p[summary]=Get free downloads, listen to music and much more.">Share to Download for free</a>
 									<a id="activatedownload" style="display: none;" href="http://adf.ly/1A0CD5" class="button" target="_blank">Free Download</a></center>
 							</article>
 							<!-- D3 PROMO 
@@ -248,7 +253,7 @@
 							</header>
 							<article class="special">
 								<a href="https://www.youtube.com/user/MillionPixels10" target="_blank">
-									<span class="image featured"><img src="https://renovaworld.com/images/d33.jpg" alt="" /></span>
+									<span class="image featured"><img src="images/d33.jpg" alt="" /></span>
 								</a>
 							</article>
 							-->
@@ -284,7 +289,7 @@
       
       							<p class="pswrd"><center><strong>RAR File Password</strong>: musicforgood</center></p>
       							
-      							<center><img src="https://renovaworld.com/images/downloadote.jpg" height="300px" width="300px" /></center>
+      							<center><img src="images/downloadote.jpg" height="300px" width="300px" /></center>
       							<center><a href="http://bit.ly/Re-NovaMikeShinoda19thFebOffTheEdgeStagelightLP" target="_blank" class="downloadBtn">
     							&nbsp; &nbsp;Download Off The Edge.song&nbsp; &nbsp;
 										</a></center>
