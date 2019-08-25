@@ -1225,3 +1225,16 @@
 			{
 				text-align: center;
 			}
+
+/***** buyButton *****/
+.buyButton{
+	background-color: #5bb9ea;
+	border-radius: 0;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+.buyButton:hover
+			{
+				color: #fff;
+				background: #2a79a2;
+			}

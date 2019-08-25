@@ -1,5 +1,6 @@
 $(function(){
 	$("#nav").load("common/navyo.html");  //Navigation bar (for later)
+	$("#bookDetails").load("common/booksdetails.html");  //Navigation bar (for later)
 	$("#contactusyo").load("common/contactusyo.html"); // Contact us Form
 	$("#newslettersignupyo").load("common/newslettersignupyo.html"); // Newsletter sign up form
 	$("#giftmeyo").load("common/giftmeyo.html"); // Gift me
