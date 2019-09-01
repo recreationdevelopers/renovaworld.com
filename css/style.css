@@ -1238,3 +1238,7 @@
 				color: #fff;
 				background: #2a79a2;
 			}
+
+.invisible{
+	display: none;
+}

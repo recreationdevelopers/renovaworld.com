@@ -15,45 +15,79 @@
 		<center><h4>You can get this book from any of the following stores</h4></center>
 			<br>
 		
-		<div class="row">
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com/dp/B07X19RJND">Amazon.com</a></center>
+		<div class="row" id="vol1AllData">
+			<div class="form-group">
+			  <label for="sel1">Select Kindle store:  </label>
+			  <select class="form-control" id="vol1SelectStore">
+			  	<option value="">select a store</option>
+			  	<option value="#vol1amazonIn">Amazon.in</option>
+			    <option value="#vol1amazonCom">Amazon.com</option>
+			    <option value="#vol1amazonCoUk">Amazon.co.uk</option>
+			    <option value="#vol1amazonDe">Amazon.de</option>
+			    <option value="#vol1amazonFr">Amazon.fr</option>
+			    <option value="#vol1amazonEs">Amazon.es</option>
+			    <option value="#vol1amazonIt">Amazon.it</option>
+			    <option value="#vol1amazonComBr">Amazon.com.br</option>
+			    <option value="#vol1amazonCa">Amazon.ca</option>
+			    <option value="#vol1amazonComAu">Amazon.com.au</option>
+			    <option value="#vol1amazonComMx">Amazon.com.mx</option>
+			    <option value="#vol1amazonNl">Amazon.nl</option>
+			  </select>
+			</div>
+			<article class="4u invisible store" id="vol1amazonCom">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com/dp/B07X19RJND">Get at Amazon.com</a></center>
 			</article>
-			<article class="4u">		
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.uk/dp/B07X19RJND">Amazon.co.uk</a></center>
+			<article class="4u invisible store" id="vol1amazonCoUk">		
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.uk/dp/B07X19RJND">Get at Amazon.co.uk</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.de/dp/B07X19RJND">Amazon.de</a></center>
+			<article class="4u invisible store" id="vol1amazonDe">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.de/dp/B07X19RJND">Get at Amazon.de</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.fr/dp/B07X19RJND">Amazon.fr</a></center>
+			<article class="4u invisible store" id="vol1amazonFr">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.fr/dp/B07X19RJND">Get at Amazon.fr</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.es/dp/B07X19RJND">Amazon.es</a></center>
+			<article class="4u invisible store" id="vol1amazonEs">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.es/dp/B07X19RJND">Get at Amazon.es</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.it/dp/B07X19RJND">Amazon.it</a></center>
+			<article class="4u invisible store" id="vol1amazonIt">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.it/dp/B07X19RJND">Get at Amazon.it</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.jp/dp/B07X19RJND">Amazon.co.jp</a></center>
+			<article class="4u invisible store" id="vol1amazonCoJp">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.jp/dp/B07X19RJND">Get at Amazon.co.jp</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.br/dp/B07X19RJND">Amazon.com.br</a></center>
+			<article class="4u invisible store" id="vol1amazonComBr">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.br/dp/B07X19RJND">Get at Amazon.com.br</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.ca/dp/B07X19RJND">Amazon.ca</a></center>
+			<article class="4u invisible store" id="vol1amazonCa">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.ca/dp/B07X19RJND">Get at Amazon.ca</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.in/dp/B07X19RJND">Amazon.in</a></center>
+			<article class="4u invisible store" id="vol1amazonIn">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.in/dp/B07X19RJND">Get at Amazon.in</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.au/dp/B07X19RJND">Amazon.com.au</a></center>
+			<article class="4u invisible store" id="vol1amazonComAu">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.au/dp/B07X19RJND">Get at Amazon.com.au</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.mx/dp/B07X19RJND">Amazon.com.mx</a></center>
+			<article class="4u invisible store" id="vol1amazonComMx">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.mx/dp/B07X19RJND">Get at Amazon.com.mx</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.nl/dp/B07X19RJND">Amazon.nl</a></center>
+			<article class="4u invisible store" id="vol1amazonNl">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.nl/dp/B07X19RJND">Get at Amazon.nl</a></center>
+			</article>
+		</div>
+		<div class="row" id="vol1GoogleData">
+			<div class="form-group">
+			  <label for="sel4">Select Google store:  </label>
+			  <select class="form-control" id="vol1SelectGoogleStore">
+			  	<option value="">select a store</option>
+			  	<option value="#vol1GoogleBooks">Google Books</option>
+			  	<option value="#vol1GooglePlay">Google Play</option>
+			</select>
+			</div>
+			<article class="4u invisible store" id="vol1GooglePlay">
+				<center><a class="button buyButton" target="_blank" href="https://play.google.com/store/books/details?id=5ICrDwAAQBAJ">Go to Google Play Store</a></center>
+			</article>
+			<article class="4u invisible store" id="vol1GoogleBooks">
+				<center><a class="button buyButton" target="_blank" href="https://books.google.co.in/books/about?id=5ICrDwAAQBAJ&redir_esc=y">Go to Google Books</a></center>
 			</article>
 		</div>
 	</article>
@@ -76,48 +110,146 @@
 		<center><h4>You can get this book from any of the following stores</h4></center>
 			<br>
 		
-		<div class="row">
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com/dp/B07X1BX9GS">Amazon.com</a></center>
+		<div class="row" id="vol2AllData">
+			<div class="form-group">
+			  <label for="sel2">Select Kindle store:  </label>
+			  <select class="form-control" id="vol2SelectStore">
+			  	<option value="">select a store</option>
+			  	<option value="#vol2amazonIn">Amazon.in</option>
+			    <option value="#vol2amazonCom">Amazon.com</option>
+			    <option value="#vol2amazonCoUk">Amazon.co.uk</option>
+			    <option value="#vol2amazonDe">Amazon.de</option>
+			    <option value="#vol2amazonFr">Amazon.fr</option>
+			    <option value="#vol2amazonEs">Amazon.es</option>
+			    <option value="#vol2amazonIt">Amazon.it</option>
+			    <option value="#vol2amazonComBr">Amazon.com.br</option>
+			    <option value="#vol2amazonCa">Amazon.ca</option>
+			    <option value="#vol2amazonComAu">Amazon.com.au</option>
+			    <option value="#vol2amazonComMx">Amazon.com.mx</option>
+			    <option value="#vol2amazonNl">Amazon.nl</option>
+			  </select>
+			</div>
+			<article class="4u invisible store" id="vol2amazonCom">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com/dp/B07X1BX9GS">Get at Amazon.com</a></center>
 			</article>
-			<article class="4u">		
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.uk/dp/B07X1BX9GS">Amazon.co.uk</a></center>
+			<article class="4u invisible store" id="vol2amazonCoUk">		
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.uk/dp/B07X1BX9GS">Get at Amazon.co.uk</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.de/dp/B07X1BX9GS">Amazon.de</a></center>
+			<article class="4u invisible store" id="vol2amazonDe">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.de/dp/B07X1BX9GS">Get at Amazon.de</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.fr/dp/B07X1BX9GS">Amazon.fr</a></center>
+			<article class="4u invisible store" id="vol2amazonFr">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.fr/dp/B07X1BX9GS">Get at Amazon.fr</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.es/dp/B07X1BX9GS">Amazon.es</a></center>
+			<article class="4u invisible store" id="vol2amazonEs">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.es/dp/B07X1BX9GS">Get at Amazon.es</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.it/dp/B07X1BX9GS">Amazon.it</a></center>
+			<article class="4u invisible store" id="vol2amazonIt">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.it/dp/B07X1BX9GS">Get at Amazon.it</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.jp/dp/B07X1BX9GS">Amazon.co.jp</a></center>
+			<article class="4u invisible store" id="vol2amazonCoJp">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.co.jp/dp/B07X1BX9GS">Get at Amazon.co.jp</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.br/dp/B07X1BX9GS">Amazon.com.br</a></center>
+			<article class="4u invisible store" id="vol2amazonComBr">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.br/dp/B07X1BX9GS">Get at Amazon.com.br</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.ca/dp/B07X1BX9GS">Amazon.ca</a></center>
+			<article class="4u invisible store" id="vol2amazonCa">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.ca/dp/B07X1BX9GS">Get at Amazon.ca</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.in/dp/B07X1BX9GS">Amazon.in</a></center>
+			<article class="4u invisible store" id="vol2amazonIn">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.in/dp/B07X1BX9GS">Get at Amazon.in</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.au/dp/B07X1BX9GS">Amazon.com.au</a></center>
+			<article class="4u invisible store" id="vol2amazonComAu">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.au/dp/B07X1BX9GS">Get at Amazon.com.au</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.mx/dp/B07X1BX9GS">Amazon.com.mx</a></center>
+			<article class="4u invisible store" id="vol2amazonComMx">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.com.mx/dp/B07X1BX9GS">Get at Amazon.com.mx</a></center>
 			</article>
-			<article class="4u">
-				<center><a class="button buyButton" target="_blank" href="http://www.amazon.nl/dp/B07X1BX9GS">Amazon.nl</a></center>
+			<article class="4u invisible store" id="vol2amazonNl">
+				<center><a class="button buyButton" target="_blank" href="http://www.amazon.nl/dp/B07X1BX9GS">Get at Amazon.nl</a></center>
+			</article>
+		</div>
+		<div class="row" id="vol2GoogleData">
+			<div class="form-group">
+			  <label for="sel3">Select Google store:  </label>
+			  <select class="form-control" id="vol2SelectGoogleStore">
+			  	<option value="">select a store</option>
+			  	<option value="#vol2GoogleBooks">Google Books</option>
+			  	<option value="#vol2GooglePlay">Google Play</option>
+			</select>
+			</div>
+			<article class="4u invisible store" id="vol2GooglePlay">
+				<center><a class="button buyButton" target="_blank" href="https://play.google.com/store/books/details?id=6oCrDwAAQBAJ">Go to Google Play Store</a></center>
+			</article>
+			<article class="4u invisible store" id="vol2GoogleBooks">
+				<center><a class="button buyButton" target="_blank" href="https://books.google.co.in/books/about?id=6oCrDwAAQBAJ&redir_esc=y">Go to Google Books</a></center>
 			</article>
 		</div>
 	</article>
 	
 	<a class="close-reveal-modal">&#215;</a>										
 </div>
+
+
+<script type="text/javascript">
+
+	// script for selection of store
+	$(document).ready(function(){
+
+    $('#vol1SelectStore').on('change', function() {
+    	var ancestor = document.getElementById('vol1AllData');
+    	var descendents = ancestor.getElementsByClassName('store');
+
+    	for(i=0; i<descendents.length; i++){
+    		var e = descendents[i];
+    		e.style.display = "none";
+    	}
+
+		var x = document.getElementById("vol1SelectStore").value;
+        $(x).show();
+
+    });
+
+    $('#vol1SelectGoogleStore').on('change', function() {
+    	var ancestor = document.getElementById('vol1GoogleData');
+    	var descendents = ancestor.getElementsByClassName('store');
+
+    	for(i=0; i<descendents.length; i++){
+    		var e = descendents[i];
+    		e.style.display = "none";
+    	}
+
+		var x = document.getElementById("vol1SelectGoogleStore").value;
+        $(x).show();
+
+    });
+
+    $('#vol2SelectStore').on('change', function() {
+    	var ancestor = document.getElementById('vol2AllData');
+    	var descendents = ancestor.getElementsByClassName('store');
+
+    	for(i=0; i<descendents.length; i++){
+    		var e = descendents[i];
+    		e.style.display = "none";
+    	}
+
+		var x = document.getElementById("vol2SelectStore").value;
+        $(x).show();
+
+    });
+
+    $('#vol2SelectGoogleStore').on('change', function() {
+    	var ancestor = document.getElementById('vol2GoogleData');
+    	var descendents = ancestor.getElementsByClassName('store');
+
+    	for(i=0; i<descendents.length; i++){
+    		var e = descendents[i];
+    		e.style.display = "none";
+    	}
+
+		var x = document.getElementById("vol2SelectGoogleStore").value;
+        $(x).show();
+
+    });
+})
+</script>
