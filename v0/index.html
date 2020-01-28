@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>sheetandsite</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Sheet &amp; Site</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav>
+    <form id="getquestid" target="_self" action="">
+        <p>Enter the quest ID that you want the data for:</p><input class="form-control" type="text" id="questid" name="questid"><button class="btn btn-primary" type="submit">Button</button></form>
+    <div class="table-responsive">
+        <table class="table" id="database-table">
+            <thead>
+                <tr>
+                    <th>Quest ID</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/datajs.js"></script>
+</body>
+
+</html>
