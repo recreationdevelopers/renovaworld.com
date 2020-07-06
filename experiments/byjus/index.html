@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BYJU'S - K3 App - Learning Map - Audio Playback Sample</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="quizContainer" class="question-box" style="padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px;margin-top:40px;background-color:#ffffff;margin-right:40px;margin-bottom:40px;margin-left:40px;">
+        <div id="questionbox">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Load any Audio File and Tap the button</p><input type="file" id="chooseAudio" accept="audio/*" onchange="fileLoader()"><button class="btn btn-primary" type="button" ontouchstart="playLMSFX()" onclick="playLMSFX()">Tap to Play Sound</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/audio.js"></script>
+</body>
+
+</html>
