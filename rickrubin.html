@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Rick Rubin Tweets - Re-Nova World</title>
+		
+		<!-- Meta -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex">
+		<meta name="googlebot" content="noindex">
+		<meta name="description" content="Error 404 - Page not found" />
+		<meta name="keywords" content="error, 404" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Main JS CDN File -->
+		<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+
+		<!-- Inclue HEAD STUFF ie CSS, JS etc elements -->
+		<script type="text/javascript" src="js/loadhead.js"></script>
+
+		<!-- Inlude BODY STUFF ie nav, footer, forms and all -->
+		<script type="text/javascript" src="js/loadbody.js"></script>
+
+		<!-- Main noscript tagged CSS stuff that can't be loaded via jquery-->
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="#" id="logo">Rick Rubin Tweets</a></h1>
+						</header>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						 <script type="text/javascript" src="js/purl.js"></script> <!-- Script to change current page href to '#' -->
+							<ul id="forlinkchange">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="music.html">Music</a></li>
+								<li>
+									<a href="#">Studio</a>
+									<ul>
+										<li><a href="homestudio.html">Home Studio</a></li>
+										<li><a href="studio.html">Online Studio</a></li>
+									</ul>
+								</li>
+								<li><a href="store.html">Store</a></li>
+								<li><a href="exclusive.html">Exclusive</a></li>
+								<li>
+									<a href="#">Projects</a>
+									<ul>
+										<li>
+											<a href="http://divilabs.com" target="_blank">Digital iVision Labs</a>
+											<!-- <ul>
+												<li><a href="http://www.divilabs.com/" target="_blank">website</a></li>
+												<li><a href="#">faceebook</a></li>
+												<li><a href="#">twitter</a></li>
+												<li><a href="#">offers</a></li>
+											</ul> -->
+										</li>
+										<li><a href="https://recreationdevelopers.com" target="_blank">Re-Creation Developers</a></li>
+										<li><a href="https://recreationclassroom.com" target="_blank">Re-Creation Classroom</a></li>									
+										<!-- <li><a href="http://clickroots.com/" target="_blank">ClickRoots.com</a></li> -->
+										<li><a href="https://www.youtube.com/user/theGBHproduction" target="_blank">GBH Production</a></li>
+									</ul>
+								</li>
+								<li><a href="artists.html">Artists</a></li>
+							</ul>
+								
+								<!-- Dropdown and Current Page link to '#' -->
+								<script>
+
+									// DROPDOWN
+									$('#nav > ul').dropotron({ 
+										mode: 'fade',
+										speed: 350,
+										noOpenerFade: true,
+										alignment: 'center'
+									});
+
+									// MAKING CURRENT PAGE LINK TO '#' (ID is 'forlinkchange')
+									$(function(){
+									    $page = $.url.attr("file");
+									    if(!$page) {
+									        $page = 'index.html';
+									    }
+									    $('#forlinkchange li a').each(function(){
+									        var $href = $(this).attr('href');
+									        if ( ($href == $page) || ($href == '') ) {
+									            $(this).attr('href', '#');
+									            // $(this).addClass('on'); FOR ADDING CLASS AND ALL
+									        }
+									        /*
+									        else {
+									            $(this).removeClass('on');
+									        }
+									        */
+									    });
+									});
+
+								</script>
+
+
+					</nav>
+
+			</div>
+
+		<!-- Main -->
+			<div class="wrapper style1">
+				<div class="container">
+
+					<!-- Article -->
+					<article id="main" class="special">
+						<header>
+							<!-- <h2><a href="#">Rick Rubin</a></h2> -->
+							<p>
+								We are a huge fan of the great <a href="https://twitter.com/RickRubin" target="_blank">Rick Rubin</a> and admire all the work that he has done. He has been inspiring us almost every day with his wisdom through his tweets that we have saved over time.
+							</p>
+							<div height="500px" width="500px"><center><img id="rickImageHolder" height="500px" width="500px"></center></div>
+							<button class="button" style="background-color:#3a86b3" onclick="getRandomTweetImage()">Load New Quote</button>
+							<p>
+								We hope that you fill find them as helpful as we do. We do not own the rights to these images and they are taken from Rick's Twitter.
+							</p>
+							
+						</header>
+					</article>
+				</div>
+			</div>
+
+		<!-- CONTACT US FORM -->
+										
+			<div id="contactusyo"></div>
+		
+		<!-- GIFT ME POP UP -->
+		<div id="giftmeyo"></div>
+
+		<!-- Footer -->
+			<div id="footer"></div>
+	
+	<!-- Google Analytics -->	
+	<div id="googleanalytics"></div>
+	
+	<!-- Include RickRubin.js (ONLY FOR THIS PAGE SO KEEPING IT OUTSIDE OF loadbody.js)
+		Also, Body should load before this is executed so keeping it here rather than in the Head
+	-->
+	<script type="text/javascript" src="js/rickrubin.js"></script>
+	<script type="text/javascript">
+		getRandomTweetImage();
+	</script>
+
+	</body>
+</html>
