@@ -23,7 +23,7 @@ function getRandomInt(min, max) {
 
 function getRandomTweetImage(){
 	// Run the function to generate random number between 1 and 225
-	var randomNumber = getRandomInt(1,226);
+	var randomNumber = getRandomInt(1,227);
 
 	// Format the randomly generated number to 00000 format
 	var imageNumber = randomNumber.toString().padStart(5, "0");
